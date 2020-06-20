@@ -1,3 +1,3 @@
 # Sapper
 
-<img src="image/Game.png">
+<img src="images/Game.png">
