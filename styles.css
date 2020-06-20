@@ -1,0 +1,71 @@
+.sized-table {
+    margin: auto;
+    width: auto;
+}
+
+.cell {
+    text-align: center;
+    font-size: 1.5rem;
+
+    width: 4rem;
+    height: 4rem;
+}
+
+.closed-cell { background: #E0FFFF; }
+
+.cell0 { background: white; }
+.cell1 { background: #ffff66; }
+.cell2 { background: #ffd800;}
+.cell3 { background: #ffba00;}
+.cell4 { background: #ffa000; }
+.cell5 { background: #ff6a00;}
+.cell6 { background: #FF4500; }
+.cell7 { background: #DC143C; }
+.cell8 { background: red; }
+.cellB { background: red; }
+
+.flagged { background: #a7fc00; }
+
+.died-pic {
+    width: 600px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -300px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.counterFlag {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 15px; /* Положение от нижнего края */
+    right: 100px; /* Положение от правого края */
+    top: 60px;
+
+}
+
+.iconFlag {
+    width: 50px;
+    height: 50px;
+
+}
+
+@media (max-width: 1280px) {
+    .counterFlag  {
+        position: absolute; /* Абсолютное позиционирование */
+        bottom: 15px; /* Положение от нижнего края */
+        right: -80px; /* Положение от правого края */
+        top: 60px;
+    }
+}
+
+
+.counterFlag  p{
+    font-size: 25px;
+    margin: 0 0 0 70px;
+    float: left;
+}
