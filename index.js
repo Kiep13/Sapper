@@ -182,21 +182,31 @@ function isNearbyStartPoint(bombPosition) {
 
 function openCells(i, j) {
 
-    if(!valueArray[i*10 + j].isCalled) {
+    let cell = valueArray[i*10 + j];
 
-        if(!valueArray[i*10 + j].isBomb()) {
+    if(!cell.isCalled) {
+
+        if(!cell.isBomb()) {
             showCell(i, j)
         }
 
-        if(valueArray[i*10 + j].isEmpty()) {
+        if(cell.isEmpty()) {
 
-            if(i  > 0 ) openCells(i-1, j);
+            if(cell.positionStatus.includes('N')) openCells(i-1, j);
 
-            if(j < HEIGHT - 1) openCells(i, j+1);
+            if(cell.positionStatus.includes('N') && cell.positionStatus.includes('E')) openCells(i-1, j+1);
 
-            if(i < WIDTH - 1) openCells(i+1, j);
+            if(cell.positionStatus.includes('E')) openCells(i, j+1);
 
-            if(j > 0) openCells(i, j-1);
+            if(cell.positionStatus.includes('E') && cell.positionStatus.includes('S')) openCells(i+1, j+1);
+
+            if(cell.positionStatus.includes('S')) openCells(i+1, j);
+
+            if(cell.positionStatus.includes('S') && cell.positionStatus.includes('W')) openCells(i+1, j-1);
+
+            if(cell.positionStatus.includes('W')) openCells(i, j-1);
+
+            if(cell.positionStatus.includes('W') && cell.positionStatus.includes('N')) openCells(i-1, j-1);
 
         }
     }
