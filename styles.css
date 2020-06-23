@@ -1,14 +1,11 @@
 .sized-table {
     margin: auto;
     width: auto;
+    height: auto;
 }
 
 .cell {
     text-align: center;
-    font-size: 1.5rem;
-
-    width: 4rem;
-    height: 4rem;
 }
 
 .closed-cell { background: #E0FFFF; }
@@ -35,13 +32,13 @@
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 90%;
+    height: 90%;
 }
 
 
 .counterFlag {
-    position: relative; /* Абсолютное позиционирование */
+    position: relative;
     left: 40%;
 }
 
@@ -50,9 +47,6 @@
     height: 50px;
 
 }
-
-
-
 
 .counterFlag  p{
     font-size: 25px;
