@@ -41,11 +41,8 @@
 
 
 .counterFlag {
-    position: absolute; /* Абсолютное позиционирование */
-    bottom: 15px; /* Положение от нижнего края */
-    right: 100px; /* Положение от правого края */
-    top: 60px;
-
+    position: relative; /* Абсолютное позиционирование */
+    left: 40%;
 }
 
 .iconFlag {
@@ -54,14 +51,7 @@
 
 }
 
-@media (max-width: 1280px) {
-    .counterFlag  {
-        position: absolute; /* Абсолютное позиционирование */
-        bottom: 15px; /* Положение от нижнего края */
-        right: -80px; /* Положение от правого края */
-        top: 60px;
-    }
-}
+
 
 
 .counterFlag  p{
