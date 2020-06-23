@@ -69,3 +69,11 @@
     margin: 0 0 0 70px;
     float: left;
 }
+
+.form-block {
+    min-width: 350px;
+    margin: auto;
+}
+
+input.validation { border: 1px solid #FF4500; }
+p.validation { color: #FF4500; }
